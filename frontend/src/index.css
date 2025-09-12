@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AlgoRail Railway Control System Design System */
+
+@layer base {
+  :root {
+    /* Railway Control Dark Theme */
+    --background: 220 27% 8%;
+    --foreground: 210 20% 90%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 27% 8%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 20% 15%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 20% 90%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 90%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 27% 8%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 210 20% 90%;
+
+    --border: 220 20% 18%;
+    --input: 220 20% 15%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Railway specific colors */
+    --rail-express: 24 100% 50%;
+    --rail-premium: 217 91% 60%;
+    --rail-local: 142 76% 36%;
+    --rail-freight: 38 92% 50%;
+    --rail-special: 280 100% 60%;
+    
+    /* Control system specific */
+    --control-sidebar: 220 30% 6%;
+    --control-panel: 220 25% 8%;
+    --control-active: 195 100% 50%;
+    --control-critical: 0 100% 50%;
+    --control-offline: 240 5% 40%;
+    
+    /* Status indicators */
+    --status-online: 142 76% 36%;
+    --status-warning: 38 92% 50%;
+    --status-critical: 0 84% 60%;
+    --status-offline: 240 5% 40%;
+    
+    /* Control system gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(217 91% 45%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 76% 28%));
+    --gradient-warning: linear-gradient(135deg, hsl(38 92% 50%), hsl(38 92% 42%));
+    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 52%));
+    --gradient-sidebar: linear-gradient(180deg, hsl(220 30% 6%), hsl(220 30% 4%));
+    
+    /* Glow effects */
+    --glow-primary: 0 0 20px hsl(217 91% 60% / 0.3);
+    --glow-success: 0 0 20px hsl(142 76% 36% / 0.3);
+    --glow-warning: 0 0 20px hsl(38 92% 50% / 0.3);
+    --glow-danger: 0 0 20px hsl(0 84% 60% / 0.3);
+    --glow-active: 0 0 15px hsl(195 100% 50% / 0.4);
+
+    /* Animation durations */
+    --transition-fast: 0.15s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
